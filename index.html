@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>BanG Dream!（バンドリ！）公式サイト</title>
+
+    <link rel="stylesheet" href="./bootstrap4.6/css/bootstrap.css">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="shortcut icon" href="./images/icon.ico">
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cabin:wght@400;600;700&family=Noto+Sans+JP:wght@100;300;400;500;700&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+    <header>
+        <!-- navbar -->
+        <nav id="TopNavbar" class="container-fluid navbar navbar-expand-xl navbar-light bg-white justify-content-end">
+            <!-- logo -->
+            <a id="logo" class="navbar-brand logo" href="#">
+                <img src="./images/logo-6th.svg" alt="logo">
+            </a>
+            <!-- 漢堡選單icon -->
+            <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button> -->
+            <!-- 導覽選單 -->
+            <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                <ul class="navbar-nav w-100 justify-content-end">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <span class="nav-item-EN text-hover-1">NEWS</span>
+                            <span class="nav-item-JP">ニュース</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <span class="nav-item-EN text-hover-2">LIVE/EVENT</span>
+                            <span class="nav-item-JP">ライブ・イベント</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <span class="nav-item-EN text-hover-3">ANIME</span>
+                            <span class="nav-item-JP">アニメ</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <span class="nav-item-EN text-hover-4">MEDIA</span>
+                            <span class="nav-item-JP">メディア</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <span class="nav-item-EN text-hover-5">DISCOGRAPHY</span>
+                            <span class="nav-item-JP">ディスコグラフィ</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <span class="nav-item-EN text-hover-6">GOODS</span>
+                            <span class="nav-item-JP">グッズ</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <span class="nav-item-EN text-hover-7">ABOUT</span>
+                            <span class="nav-item-JP">バンドリ！とは</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <!-- 社群icon -->
+            <div class="social-icon">
+                <a href="#"><img src="./images/twitter.png" alt="Twitter"></a>
+                <a href="#"><img src="./images/youtube.png" alt="Youtube"></a>
+                <a href="#"><img src="./images/instagram.png" alt="Instagram"></a>
+            </div>
+            <!-- 手機板漢堡選單 -->
+            <a href="#" class="burger">
+                <span class="burgerBtn"></span>
+                <span class="burgerBtn"></span>
+                <span class="burgerBtn"></span>
+            </a>
+        </nav>
+    </header>
+    <!-- Banner -->
+    <div class="banner" id="banner">
+        <img class="banner-bg" src="./images/banner_bg.jpg" alt="">
+        <img class="banner-bg-m" src="./images/banner_bg_m.jpg" alt="">
+        <button type="button" id="scroll" class="scroll" onclick="location.href='index.html#scroll'">
+            <img src="./images/scroll-content-btn.png">
+        </button>
+    </div>
+    <!-- Carousel -->
+    <div class="carousel" id="carousel">
+        <div class="swiper-container">
+            <!-- carousel圖片 -->
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <a href="#">
+                        <img src="./images/top-carousel-01.jpg" alt="">
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="#">
+                        <img src="./images/top-carousel-02.jpg" alt="">
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="#">
+                        <img src="./images/top-carousel-03.jpg" alt="">
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="#">
+                        <img src="./images/top-carousel-04.jpg" alt="">
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="#">
+                        <img src="./images/top-carousel-05.jpg" alt="">
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="#">
+                        <img src="./images/top-carousel-06.jpg" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!-- 指示器 -->
+        <div class="swiper-pagination"></div>
+        <!-- 左右箭頭 -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+    </div>
+
+    <!-- main -->
+    <main>
+        <div class="container">
+            <!-- news part -->
+            <div class="row main-title">
+                <img src="./images/title-icon.png" class="title-icon" alt="">
+                <span class="main-title-EN">NEWS</span>
+                <div class="w-100"></div>
+                <span class="main-title-JP">ニュース</span>
+            </div>
+            <div class="row news">
+                <!-- news-card1 -->
+                <div class="news-card col-6 col-lg-4 new-star">
+                    <a href="#" class="news-content text-decoration-none">
+                        <div class="news-pic news-pic-01">
+                            <div class="view-hover">
+                                <img src="./images/view_hover.png" alt="">
+                            </div>
+                        </div>
+                        <div class="news-category">
+                            <img src="./images/news-cat-media.png" alt="">
+                        </div>
+                        <div class="news-detail">
+                            <span>「バンドリ！TV LIVE 2021」第75回放送のお知らせ</span>
+                        </div>
+                    </a>
+                    <div class="news-date">
+                        <span>2021.07.08[Thu]</span>
+                    </div>
+                </div>
+                <!-- news-card2 -->
+                <div class="news-card col-6 col-lg-4 new-star">
+                    <a href="#" class="news-content text-decoration-none">
+                        <div class="news-pic news-pic-02">
+                            <div class="view-hover">
+                                <img src="./images/view_hover.png" alt="">
+                            </div>
+                        </div>
+                        <div class="news-category">
+                            <img src="./images/news-cat-live-event.png" alt="">
+                        </div>
+                        <div class="news-detail">
+                            <span>
+                                各音楽配信サイトにて『Pastel＊Palettes Special Live 「TITLE DREAM」』セトリプレイリストを公開！</span>
+                        </div>
+                    </a>
+                    <div class="news-date">
+                        <span>2021.07.08[Thu]</span>
+                    </div>
+                </div>
+                <!-- news-card3 -->
+                <div class="news-card col-6 col-lg-4 new-star">
+                    <a href="#" class="news-content text-decoration-none">
+                        <div class="news-pic news-pic-03">
+                            <div class="view-hover">
+                                <img src="./images/view_hover.png" alt="">
+                            </div>
+                        </div>
+                        <div class="news-category">
+                            <img src="./images/news-cat-goods.png" alt="">
+                        </div>
+                        <div class="news-detail">
+                            <span>【激ロックコラボ第5弾】7月16日(金)15:00～再受注販売決定！！</span>
+                        </div>
+                    </a>
+                    <div class="news-date">
+                        <span>2021.07.08[Thu]</span>
+                    </div>
+                </div>
+                <!-- news-card4 -->
+                <div class="news-card col-6 col-lg-4">
+                    <a href="#" class="news-content text-decoration-none">
+                        <div class="news-pic news-pic-04">
+                            <div class="view-hover">
+                                <img src="./images/view_hover.png" alt="">
+                            </div>
+                        </div>
+                        <div class="news-category">
+                            <img src="./images/news-cat-release.png" alt="">
+                        </div>
+                        <div class="news-detail">
+                            <span>オリコン週間デジタルアルバムランキング1位獲得！劇場版「BanG Dream! Episode of Roselia」Theme Songs
+                                Collection</span>
+                        </div>
+                    </a>
+                    <div class="news-date">
+                        <span>2021.07.07[Wed]</span>
+                    </div>
+                </div>
+                <!-- news-card5 -->
+                <div class="news-card col-6 col-lg-4">
+                    <a href="#" class="news-content text-decoration-none">
+                        <div class="news-pic news-pic-05">
+                            <div class="view-hover">
+                                <img src="./images/view_hover.png" alt="">
+                            </div>
+                        </div>
+                        <div class="news-category">
+                            <img src="./images/news-cat-media.png" alt="">
+                        </div>
+                        <div class="news-detail">
+                            <span>「バンドリ！TV LIVE 2021」第74回放送のお知らせ</span>
+                        </div>
+                    </a>
+                    <div class="news-date">
+                        <span>2021.07.01[Thu]</span>
+                    </div>
+                </div>
+                <!-- news-card6 -->
+                <div class="news-card col-6 col-lg-4">
+                    <a href="#" class="news-content text-decoration-none">
+                        <div class="news-pic news-pic-06">
+                            <div class="view-hover">
+                                <img src="./images/view_hover.png" alt="">
+                            </div>
+                        </div>
+                        <div class="news-category">
+                            <img src="./images/news-cat-live-event.png" alt="">
+                        </div>
+                        <div class="news-detail">
+                            <span>Morfonica「Andante」＆RAISE A SUILEN「BE LIGHT」東京公演のライブ特別配信が決定！</span>
+                        </div>
+                    </a>
+                    <div class="news-date">
+                        <span>2021.06.30[Wed]</span>
+                    </div>
+                </div>
+                <!-- news-card7 -->
+                <div class="news-card col-6 col-lg-4">
+                    <a href="#" class="news-content text-decoration-none">
+                        <div class="news-pic news-pic-07">
+                            <div class="view-hover">
+                                <img src="./images/view_hover.png" alt="">
+                            </div>
+                        </div>
+                        <div class="news-category">
+                            <img src="./images/news-cat-live-event.png" alt="">
+                        </div>
+                        <div class="news-detail">
+                            <span>各音楽配信サイトにて『RAISE A SUILEN ZEPP TOUR 2021「BE LIGHT」＠Zepp Namba』セトリプレイリストを公開！</span>
+                        </div>
+                    </a>
+                    <div class="news-date">
+                        <span>2021.06.30[Wed]</span>
+                    </div>
+                </div>
+                <!-- news-card8 -->
+                <div class="news-card col-6 col-lg-4">
+                    <a href="#" class="news-content text-decoration-none">
+                        <div class="news-pic news-pic-08">
+                            <div class="view-hover">
+                                <img src="./images/view_hover.png" alt="">
+                            </div>
+                        </div>
+                        <div class="news-category">
+                            <img src="./images/news-cat-release.png" alt="">
+                        </div>
+                        <div class="news-detail">
+                            <span>劇場版「BanG Dream! Episode of Roselia」Theme Songs
+                                Collection音楽配信スタート！mora限定でスペシャルボイスメッセージプレゼント！</span>
+                        </div>
+                    </a>
+                    <div class="news-date">
+                        <span>2021.06.30[Wed]</span>
+                    </div>
+                </div>
+            </div>
+            <!-- view more -->
+            <div class="row news-bot">
+                <a href="#" class="news-bot-EN">VIEW MORE</a>
+            </div>
+
+            <!-- schedule part -->
+            <div class="row main-title">
+                <img src="./images/title-icon.png" class="title-icon" alt="">
+                <span class="main-title-EN">SCHEDULE</span>
+                <div class="w-100"></div>
+                <span class="main-title-JP">スケジュール</span>
+            </div>
+            <!-- title -->
+            <div class="row schedule-month">
+                <span>2021年7月</span>
+            </div>
+            <!-- 日曆區 -->
+            <div class="row schedule">
+                <div class="col-12 col-md schedule-week">
+                    <!-- 單一日區塊 -->
+                    <div class="weekday sunday">日</div> <!-- 星期幾(PC) -->
+                    <div class="weekday-content weekday-today">
+                        <!-- 星期下方格子內容 -->
+                        <div class="weekday-date">
+                            <span>11</span>
+                            <div class="weekday-m">
+                                <span>日曜日</span>
+                            </div>
+                        </div> <!-- 日期 -->
+                        <a href="#" class="text-decoration-none w-100">
+                            <!-- 當日內容(若無則把a刪除) -->
+                            <div class="weekday-detail-blue">
+                                <!-- 內容(blue/yellow) -->
+                                <span>🌹EoR2 舞台挨拶ツアー＠シネマサンシャイン エミフルMASAKI</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-12 col-md schedule-week">
+                    <div class="weekday">月</div>
+                    <div class="weekday-content">
+                        <div class="weekday-date">
+                            <span>12</span>
+                            <div class="weekday-m">
+                                <span>月曜日</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md schedule-week">
+                    <div class="weekday">火</div>
+                    <div class="weekday-content">
+                        <div class="weekday-date">
+                            <span>13</span>
+                            <div class="weekday-m">
+                                <span>火曜日</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md schedule-week">
+                    <div class="weekday">水</div>
+                    <div class="weekday-content">
+                        <div class="weekday-date">
+                            <span>14</span>
+                            <div class="weekday-m">
+                                <span>水曜日</span>
+                            </div>
+                        </div>
+                        <a href="#" class="text-decoration-none w-100">
+                            <div class="weekday-detail-yellow w-100">
+                                <span>💿ハロー、ハッピーワールド！ 1st Album「にこにこねくと！」</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-12 col-md schedule-week">
+                    <div class="weekday">木</div>
+                    <div class="weekday-content">
+                        <div class="weekday-date">
+                            <span>15</span>
+                            <div class="weekday-m">
+                                <span>木曜日</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md schedule-week">
+                    <div class="weekday">金</div>
+                    <div class="weekday-content">
+                        <div class="weekday-date">
+                            <span>16</span>
+                            <div class="weekday-m">
+                                <span>金曜日</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md schedule-week">
+                    <div class="weekday saturday">土</div>
+                    <div class="weekday-content">
+                        <div class="weekday-date">
+                            <span>17</span>
+                            <div class="weekday-m">
+                                <span>土曜日</span>
+                            </div>
+                        </div>
+                        <div class="details">
+                            <a href="#" class="text-decoration-none w-100">
+                                <div class="weekday-detail-blue">
+                                    <span>🌹EoR2 舞台挨拶ツアー＠イオンシネマ幕張新都心</span>
+                                </div>
+                            </a>
+                            <a href="#" class="text-decoration-none w-100">
+                                <div class="weekday-detail-blue">
+                                    <span>🚍バンドリーマー感謝キャラバン 2021 in 大阪</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- view more -->
+            <div class="row news-bot">
+                <a href="#" class="news-bot-EN">VIEW MORE</a>
+            </div>
+        </div>
+        <!-- ad part -->
+        <div class="container-fluid">
+
+            <div class="row ad">
+                <div class="ad-content col-10 col-lg-5">
+                    <a href="#">
+                        <img src="./images/ad01.jpg" alt="">
+                    </a>
+                </div>
+                <div class="ad-content col-10 col-lg-5">
+                    <a href="#">
+                        <img src="./images/ad02.jpg" alt="">
+                    </a>
+                </div>
+                <div class="w-100"></div>
+                <div class="ad-content col-10 col-lg-5">
+                    <a href="#">
+                        <img src="./images/ad03.jpg" alt="">
+                    </a>
+                </div>
+                <div class="ad-content col-10 col-lg-5">
+                    <a href="#">
+                        <img src="./images/ad04.jpg" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- footer -->
+    <footer>
+        <div class="container-fluid footer">
+            <!-- title -->
+            <div class="row footer-title">
+                <img src="./images/white-star.png" alt="">
+                <span>Official Twitter</span>
+                <img src="./images/white-star.png" alt="">
+            </div>
+            <!-- Twitter Link -->
+            <div class="row footerTL">
+                <a href="#" class="footerTL-card col-12 col-lg-4 text-decoration-none">
+                    <div class="footerTL-card-pic">
+                        <img src="./images/footerTL01.png" alt="">
+                    </div>
+                    <div class="footerTL-card-detail">
+                        <span>BanG Dream!（バンドリ！）公式</span>
+                        <span>@bang_dream_info</span>
+                    </div>
+                </a>
+                <a href="#" class="footerTL-card col-12 col-lg-4 text-decoration-none">
+                    <div class="footerTL-card-pic">
+                        <img src="./images/footerTL02.png" alt="">
+                    </div>
+                    <div class="footerTL-card-detail">
+                        <span>バンドリ！ ガールズバンドパーティ！</span>
+                        <span>@bang_dream_gbp</span>
+                    </div>
+                </a>
+            </div>
+            <!-- share icon part -->
+            <div class="row share">
+                <div class="share-text">
+                    <span>SHARE</span>
+                </div>
+                <div class="share-icon">
+                    <img src="./images/twitter_circle.png" alt="">
+                    <img src="./images/facebook.png" alt="">
+                    <img src="./images/line.png" alt="">
+                </div>
+            </div>
+            <!-- footer-logo -->
+            <a href class="row footer-logo">
+                <img class="footer-logo-pic-pink" src="./images/footer-logo-pink.png" alt="">
+                <img class="footer-logo-pic-white" src="./images/footer-logo-white.png" alt="">
+            </a>
+            <!-- bushiroad logo -->
+            <div class="row bushiroad">
+                <a href="#" class="bushiroad-logo">
+                    <img src="./images/logo-bushiroad.png" alt="">
+                </a>
+                <a href="#" class="bushiroad-logo">
+                    <img src="./images/logo-bushiroad-music.png" alt="">
+                </a>
+            </div>
+            <!-- language change -->
+            <div class="row language">
+                <a href="#" class="language-border">JP</a>
+                <a href="#">EN</a>
+            </div>
+            <!-- copyright -->
+            <div class="row copyright">
+                <a href="#">「BanG Dream!（バンドリ！）」著作物利用に関するガイドライン</a>
+                <span>掲載の記事・写真・イラスト等のすべてのコンテンツの無断複写・転載を禁じます。©BanG Dream! Project ©Craft Egg Inc. ©bushiroad All Rights
+                    Reserved.</span>
+            </div>
+        </div>
+    </footer>
+
+    <!-- gotoTop button -->
+    <button type="button" id="gotoTop" class="gotoTop" onclick="location.href='index.html#banner'">
+        <img src="./images/pagetop.png" width="70" height="70">
+    </button>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+        integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+        crossorigin="anonymous"></script>
+    <script src="bootstrap4.6/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <script>
+        /* swiper */
+        const swiper = new Swiper('.swiper-container', {
+            direction: 'horizontal', //水平or垂直
+            loop: true,
+            slidesPerView: 'auto', //slide同時可視個數
+            autoplay: {
+                delay: 5000, //自動播放間隔
+            },
+            spaceBetween: 20, //slide間距
+            speed: 1000, //轉動速度
+
+            pagination: {
+                el: '.swiper-pagination', //slide第N個項目指示器
+            },
+
+            // Navigation arrows
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+
+
+        /* gotoTop button visible */
+        if ($(window).width() > 100) {
+            $(function () {
+                $(window).scroll(function () {
+                    if ($(this).scrollTop() > 300) {
+                        $('#gotoTop').fadeIn(222);
+                    } else {
+                        $('#gotoTop').stop().fadeOut(222);
+                    }
+                }).scroll();
+            });
+        }
+        /* navbar fixed top */
+        if ($(window).width() > 100) {
+            $(window).scroll(function () {
+                if ($(this).scrollTop() > 10) {
+                    $('#TopNavbar').addClass("fixed-top");
+                    $('#TopNavbar').addClass("navbarMove");
+                    $('#logo').addClass("logoMove");
+                    $('body').css('padding-top', $('.navbar').outerHeight() + 'px');
+                } else {
+                    $('#TopNavbar').removeClass("fixed-top");
+                    $('#TopNavbar').removeClass("navbarMove");
+                    $('#logo').removeClass("logoMove");
+                    // remove padding top from body
+                    $('body').css('padding-top', '0');
+                }
+            });
+        }
+
+    </script>
+
+</body>
+
+</html>
