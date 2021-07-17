@@ -91,11 +91,50 @@
                 <a href="#"><img src="./images/instagram.png" alt="Instagram"></a>
             </div>
             <!-- 手機板漢堡選單 -->
-            <a href="#" class="burger">
-                <span class="burgerBtn"></span>
-                <span class="burgerBtn"></span>
-                <span class="burgerBtn"></span>
+            <a href="#" class="burger" id="burger">
+                <span id="burgerBtn1" class="burgerBtn"></span>
+                <span id="burgerBtn2" class="burgerBtn"></span>
+                <span id="burgerBtn3" class="burgerBtn"></span>
             </a>
+            <div id="moblie-list" class="moblie-list">
+                <ul class="moblie-list-area">
+                    <li class="moblie-list-item">
+                        <a href="">
+                            <span>NEWS</span>
+                        </a>
+                    </li>
+                    <li class="moblie-list-item">
+                        <a href="">
+                            <span>LIVE/EVENT</span>
+                        </a>
+                    </li>
+                    <li class="moblie-list-item">
+                        <a href="">
+                            <span>ANIME</span>
+                        </a>
+                    </li>
+                    <li class="moblie-list-item">
+                        <a href="">
+                            <span>MEDIA</span>
+                        </a>
+                    </li>
+                    <li class="moblie-list-item">
+                        <a href="">
+                            <span>DISCOGRAPHY</span>
+                        </a>
+                    </li>
+                    <li class="moblie-list-item">
+                        <a href="">
+                            <span>GOODS</span>
+                        </a>
+                    </li>
+                    <li class="moblie-list-item">
+                        <a href="">
+                            <span>ABOUT</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </nav>
     </header>
     <!-- Banner -->
@@ -508,9 +547,15 @@
                     <span>SHARE</span>
                 </div>
                 <div class="share-icon">
-                    <img src="./images/twitter_circle.png" alt="">
-                    <img src="./images/facebook.png" alt="">
-                    <img src="./images/line.png" alt="">
+                    <a href="">
+                        <img src="./images/twitter_circle.png" alt="">
+                    </a>
+                    <a href="">
+                        <img src="./images/facebook.png" alt="">
+                    </a>
+                    <a href="">
+                        <img src="./images/line.png" alt="">
+                    </a>
                 </div>
             </div>
             <!-- footer-logo -->
@@ -608,6 +653,27 @@
                 }
             });
         }
+
+        /* burger圖形變換&moblie-list開關 */
+        $(document).ready(function () {
+            $('#burger').click(function () {
+                if ($('#burger').hasClass('burger-open')) {
+                    $('#burger').removeClass("burger-open");
+                    $('#burgerBtn1').removeClass("burgerBtn1");
+                    $('#burgerBtn2').removeClass("burgerBtn2");
+                    $('#burgerBtn3').removeClass("burgerBtn3");
+                    $('#moblie-list').hide();
+                } else {
+                    $('#burger').addClass("burger-open");
+                    $('#burgerBtn1').addClass("burgerBtn1");
+                    $('#burgerBtn2').addClass("burgerBtn2");
+                    $('#burgerBtn3').addClass("burgerBtn3");
+                    $('#moblie-list').show();
+                }
+
+            });
+        });
+
 
     </script>
 

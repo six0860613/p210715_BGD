@@ -19,6 +19,10 @@ img{
     z-index: 10;
     background-color: transparent;
 }
+.gotoTop:hover{
+    transition: 0.3s ease;
+    opacity: 0.6;
+}
 
 
 /* ----- header ----- */
@@ -75,6 +79,10 @@ img{
     display: flex;
     flex-direction: column;
     order: 2;
+    z-index: 25;
+}
+.burger-open{
+
 }
 .burgerBtn{
     background: rgb(231, 27, 105);
@@ -83,16 +91,20 @@ img{
     margin: 3px auto;
     transition: 0.2s ease;
 }
-.burger:hover .burgerBtn:nth-child(1){
+.burgerBtn1{
     transform: rotate(-45deg);
 }
-.burger:hover .burgerBtn:nth-child(2){
+.burgerBtn2{
     transform: rotate(45deg);
     margin-top: -0.3rem;
 }
-.burger:hover .burgerBtn:nth-child(3){
+.burgerBtn3{
     opacity: 0;
 }
+.moblie-list{
+    display: none;
+}
+
 
 
 @media screen and (max-width:1200px) { 
@@ -105,6 +117,40 @@ img{
     .social-icon a img{
         width: 30px;
         height: 30px;
+    }
+    .moblie-list{
+        width: 100%;
+        height: 100vh;
+        background-color: rgba(0, 0, 0, 0.6);
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 20;
+    }
+    .moblie-list-area{
+        list-style:none;
+        margin-right: 20px;
+        margin-left: 20px;
+        margin-top: 20%;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        border-top: 2px solid rgb(231, 27, 105);
+    }
+    .moblie-list-item{
+        padding: 10px 20px;
+        border-bottom: 2px solid rgb(231, 27, 105);
+    }
+    .moblie-list-item a{
+        text-decoration-color: white;
+        display: block;
+    }
+    .moblie-list-item a span{
+        color: white;
+        font-family: 'Cabin', sans-serif;
+        text-align: center;
+        font-size: 0.9rem;
+        letter-spacing: 0.1rem;
     }
 }
 @media screen and (min-width:1200px){
@@ -242,7 +288,8 @@ img{
 }
 .swiper-pagination{
     bottom: 25% !important;
-    left: 47% !important;
+    left: 50% !important;
+    transform: translateX(-50%)!important;
 }
 .swiper-pagination-bullet{
     background: url('./images/pagination.png')no-repeat center center!important;
@@ -264,7 +311,8 @@ img{
     }
     .swiper-pagination{
         bottom: 5% !important;
-        left: 34% !important;
+        left: 50% !important;
+        transform: translateX(-50%)!important;
     }
     .swiper-button-prev{
         transform: rotate(180deg) scale(0.5);
@@ -371,7 +419,11 @@ main{
 }
 @media screen and (max-width: 767px){
     .news-pic{
-        height: 150px;
+        height: 120px;
+    }
+    .new-star::before{
+        width: 45px;
+        height: 45px;
     }
 }
 .news-content:hover .view-hover{
@@ -702,6 +754,10 @@ main{
 .share-icon img{
     max-height: 100%;
     padding: 0 10px;
+}
+.share-icon a:hover{
+    transition: 0.3s ease;
+    opacity: 0.8;
 }
 /* footer-logo */
 .footer-logo{
